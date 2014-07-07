@@ -113,9 +113,11 @@ BBLog.handle("add.plugin", {
             }));
         }
         // new links to user profile dropdown
-        var e = $("section#user .common-reportbutton-dropdown ul");
+        var e = $("section#user .profile-info .common-reportbutton-dropdown ul, #profile-header .username ul");
         if(e.length && !$("#bmods-userposts-link").length){
-            e.append('<li><a id="bmods-userposts-link" class="base-no-ajax" target="_blank" href="/bf4/'+BBLog.cache("battlelog.language")+'forum/userPosts/'+$("#user").attr("data-user-id")+'/">User Posts</a></li>');
+            var id = $("#user").attr("data-user-id");
+            if(!id) id = $("#profile-secondary-column a.avatar").attr("rel");
+            e.append('<li><a id="bmods-userposts-link" class="base-no-ajax" target="_blank" href="/bf4/'+BBLog.cache("battlelog.language")+'forum/userPosts/'+id+'/">User Posts</a></li>');
         }
     }
 });
