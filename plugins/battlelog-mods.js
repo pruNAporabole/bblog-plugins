@@ -117,7 +117,7 @@ BBLog.handle("add.plugin", {
         if(e.length && !$("#bmods-userposts-link").length){
             var id = $("#user").attr("data-user-id");
             if(!id) id = $("#profile-secondary-column a.avatar").attr("rel");
-            e.append('<li><a id="bmods-userposts-link" class="base-no-ajax" target="_blank" href="/bf4/'+BBLog.cache("battlelog.language")+'forum/userPosts/'+id+'/">User Posts</a></li>');
+            e.append('<li><a id="bmods-userposts-link" class="base-no-ajax" target="_blank" href="/'+BBLog.cache("mode")+'/'+BBLog.cache("battlelog.language")+'forum/userPosts/'+id+'/">User Posts</a></li>');
         }
     }
 });
