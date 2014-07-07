@@ -6,10 +6,13 @@ Repository for Better Battlelog Plugins. Contribute new plugins, translate exist
 How to add new plugins?
 =
 
-Just push it in the folder "plugins" in the "gh-pages" branche.
-Than edit "index.html" to add a section for your plugin.
+Fork the project.
+Push new plugin files in the folder "plugins" in the "gh-pages" branche.
+Edit "index.html" to add a section and description for your plugin.
+Send a pull request, than i can integrate it into the repos.
 
 How to translate plugins?
 =
-Just push your changes to an existing plugin file.
-Change the "translations : " object. Example: http://getbblog.com/plugins/example.js
+Change an existing plugin file.
+Mostly the object "translations" needs to be translated. 
+Example: http://getbblog.com/plugins/example.js
