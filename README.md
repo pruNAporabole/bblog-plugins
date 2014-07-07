@@ -10,6 +10,9 @@ Fork the project.
 Push new plugin files in the folder "plugins" in the "gh-pages" branche.
 Edit "index.html" to add a section and description for your plugin.
 Send a pull request, than i can integrate it into the repos.
+Need help in creating a plugin for BBLog? 
+http://getbblog.com/plugins/example.js
+http://getbblog.com/board/forum/1353/1/Custom-Plugins
 
 How to translate plugins?
 =
