@@ -146,6 +146,7 @@ BBLog.handle("add.plugin", {
                             for(var subId in texts){
                                 text = text.replace(new RegExp("{"+subId+"}", "ig"), texts[subId]["text-self"]);
                             }
+                            v += text;
                             t.val(v);
                             BBLog.closeAllPopups();
                             $("input[name='officialPost']").prop("checked", true);
