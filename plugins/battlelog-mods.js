@@ -28,27 +28,60 @@ BBLog.handle("add.plugin", {
     * @type Object
     */
     textTemplates : {
-        "de" : [
-            {
-                "title" : 'Clansuche closed',
-                "text" : '[b]Communtiy[/b]\n(Das Forum rund um die Community, Rekruten suchen & finden und kreative Posts)\nhttp://battlelog.battlefield.com/bf4/de/forum/view/2955065218175153843/\n\n[b]Beachte folgenden Thread:[/b]\n[i]Richtlinien für Clansuche / Clanangebote[/i]\nhttp://battlelog.battlefield.com/bf4/de/forum/threadview/2955064768540810904/\n\n[b]Thread geschlossen. [/b]'
+        "de" : {
+            "clan" : {
+                "title" : "Clansuche",
+                "text-self" : "Hierzu gibt es bereits ein Unterforum wo solches hingehört:\n\n[b]Communtiy[/b]\n(Das Forum rund um die Community, Rekruten suchen & finden und kreative Posts)\nhttp://battlelog.battlefield.com/bf4/de/forum/view/2955065218175153843/\n\n[b]Beachte folgenden Thread:[/b]\n[i]Richtlinien für Clansuche / Clanangebote[/i]\nhttp://battlelog.battlefield.com/bf4/de/forum/threadview/2955064768540810904/",
+                "text-use" : "{clan}\n\n{closed}"
             },
-            {
-                "title" : "Name & Shame closed",
-                "text" : '[b]Richtlinien für Beiträge[/b]\nDer Sinn in den Foren ist es, eine produktive, hilfreiche und einladende Atmosphäre zu schaffen, in der Spieler diskutieren, Hilfe suchen und Rückmeldungen zu Battlefield posten können. Beiträge, die nicht diesen Richtlinien entsprechen, unterliegen dem Ermessen der Forenmoderatoren und können entfernt werden. Nutzer, die wiederholt gegen Regeln verstoßen oder durch ein negatives Verhalten auffallen, können durch Disziplinare Maßnahmen (Bann) bestraft werden.\n\n[b]Name & Shame[/b]\nDas Benennen oder Andeuten von Nutzern, von denen du glaubst, dass sie cheaten ist im Battlelog nicht erlaubt.\nEs ist weder produktiv, noch beschleunigt es die Sanktionen, die gegen solche Spieler erhoben werden.\nJegliche Andeutungen oder Bemerkungen dieser Art werden entfernt.\nMelde einen Spieler direkt über das Dreieck in seinem Battlelog Profil, damit wir das korrekt überprüfen können.\n\n[b]Thread geschlossen.[/b]'
+            "nameshame" : {
+                "title" : "Name & Shame",
+                "text-self" : "[b]Name & Shame[/b]\nDas Benennen oder Andeuten von Nutzern, von denen du glaubst, dass sie cheaten ist im Battlelog nicht erlaubt.\nEs ist weder produktiv, noch beschleunigt es die Sanktionen, die gegen solche Spieler erhoben werden.\nJegliche Andeutungen oder Bemerkungen dieser Art werden entfernt.\nMelde einen Spieler direkt über das Dreieck in seinem Battlelog Profil, damit wir das korrekt überprüfen können.",
+                "text-use" : "{guidelines}\n\n{nameshame}\n\n{closed}"
             },
-            {
+            "search" : {
                 "title" : "Suchfunktion",
-                "text" : '[b]Richtlinien für Beiträge[/b]\nDer Sinn in den Foren ist es, eine produktive, hilfreiche und einladende Atmosphäre zu schaffen, in der Spieler diskutieren, Hilfe suchen und Rückmeldungen zu Battlefield posten können. Beiträge, die nicht diesen Richtlinien entsprechen, unterliegen dem Ermessen der Forenmoderatoren und können entfernt werden. Nutzer, die wiederholt gegen Regeln verstoßen oder durch ein negatives Verhalten auffallen, können durch Disziplinare Maßnahmen (Bann) bestraft werden.\n\n[b]Nutze die Suchfunktion[/b]\nDoppelte oder mehrfach vorhandene Themen oder Posts werden entfernt, um die Effektivität der Foren zu erhalten. Wiederholtes Posting eines bereits vorhandenen Themas oder Posts kann zu einem temporären Bann führen.\n\n[b]Thread geschlossen.[/b]'
+                "text-self" : "[b]Nutze die Suchfunktion[/b]\nDoppelte oder mehrfach vorhandene Themen oder Posts werden entfernt, um die Effektivität der Foren zu erhalten. Wiederholtes Posting eines bereits vorhandenen Themas oder Posts kann zu einem temporären Bann führen.",
+                "text-use" : "{guidelines}\n\n{search}\n\n{closed}"
             },
-            {
-                "title" : "Richtlinien closed",
-                "text" : '[b]Richtlinien für Beiträge[/b]\nDer Sinn in den Foren ist es, eine produktive, hilfreiche und einladende Atmosphäre zu schaffen, in der Spieler diskutieren, Hilfe suchen und Rückmeldungen zu Battlefield posten können. Beiträge, die nicht diesen Richtlinien entsprechen, unterliegen dem Ermessen der Forenmoderatoren und können entfernt werden. Nutzer, die wiederholt gegen Regeln verstoßen oder durch ein negatives Verhalten auffallen, können durch Disziplinare Maßnahmen (Bann) bestraft werden.\n\n[b]Thread geschlossen.[/b]'
+            "guidelines" : {
+                "title" : "Richtlinien für Beiträge",
+                "text-self" : "[b]Richtlinien für Beiträge[/b]\nDer Sinn in den Foren ist es, eine produktive, hilfreiche und einladende Atmosphäre zu schaffen, in der Spieler diskutieren, Hilfe suchen und Rückmeldungen zu Battlefield posten können. Beiträge, die nicht diesen Richtlinien entsprechen, unterliegen dem Ermessen der Forenmoderatoren und können entfernt werden. Nutzer, die wiederholt gegen Regeln verstoßen oder durch ein negatives Verhalten auffallen, können durch Disziplinare Maßnahmen (Bann) bestraft werden.",
+                "text-use" : "{guidelines}\n\n{closed}"
+            },
+            "closed" : {
+                "title" : "Thread geschlossen",
+                "text-self" : "[b]Thread geschlossen.[/b]",
+                "text-use" : "{closed}"
             }
-        ],
-        "en" : [
-
-        ]
+        },
+        "en" : {
+            "clan" : {
+                "title" : "Recruitment",
+                "text-self" : "Please be sure to post in the correct forums of your platform to recruite:\n[url=http://battlelog.battlefield.com/bf4/en/forum/view/2955065226116511147/]Recruitment for PC[/url]\n[url=http://battlelog.battlefield.com/bf4/en/forum/view/2979150493868734973/]Recruitment for PS3 & PS4[/url]\n[url=http://battlelog.battlefield.com/bf4/en/forum/view/2955064775252487694/]Recruitment for X360 & XONE[/url]\n\nAlso, don't forget to check the guide to the Platoons Forum for more informations:\nhttp://battlelog.battlefield.com/bf4/en/forum/threadview/2955064775253899297/",
+                "text-use" : "{clan}\n\n{closed}"
+            },
+            "nameshame" : {
+                "title" : "Name & Shame",
+                "text-self" : "[b]Naming and Shaming[/b]\nNaming and shaming those who you believe to be cheating is not permitted on the forum or Battlelog posts. It is not productive and does not expedite action taken against these players. Any references of this type will be removed. Instead, Report players directly for investigation.",
+                "text-use" : "{guidelines}\n\n{nameshame}\n\n{closed}"
+            },
+            "search" : {
+                "title" : "Search Engine",
+                "text-self" : "[b]Use the search feature[/b]\nDuplicate content will be removed to promote the usefulness of this forum. Repeat reposting will result in a temporary ban.",
+                "text-use" : "{guidelines}\n\n{search}\n\n{closed}"
+            },
+            "guidelines" : {
+                "title" : "Guidelines",
+                "text-self" : "[b]Post Guidelines[/b]\nThe purpose of these forums is to create a productive and inviting space in which players can discuss, seek help, and give feedback on Battlefield. Posts that do not contribute to this end are subject to removal per the judgment of forum staff. Users that regularly violate rules or who are disruptive are subject to disciplinary action (bans) per the judgment of forum staff.",
+                "text-use" : "{guidelines}\n\n{closed}"
+            },
+            "closed" : {
+                "title" : "Thread locked",
+                "text-self" : "[b]Thread locked.[/b]",
+                "text-use" : "{closed}"
+            }
+        }
     },
 
     /**
@@ -103,13 +136,20 @@ BBLog.handle("add.plugin", {
                 html.append('<div style="font-size:10px; text-align:right;">Plugin powered by <a href="http://getbblog.com" target="_blank">getbblog.com</a></div><br/>');
                 if(typeof instance.textTemplates[BBLog.cache("language")] != "undefiend"){
                     var texts = instance.textTemplates[BBLog.cache("language")];
-                    for(var i in texts){
-                        html.append($('<div class="entry">'+texts[i].title+'</div>').data("text", texts[i]).on("click", function(){
+                    for(var id in texts){
+                        html.append($('<div class="entry">'+texts[id].title+'</div>').data("data", texts[id]).on("click", function(){
                             t.trigger("focus");
-                            var v = t.val();
-                            v = v + $(this).data("text").text;
+                            var data = $(this).data("data");
+                            var v = $.trim(t.val());
+                            if(v.length) v += "\n\n";
+                            var text = data["text-use"];
+                            for(var subId in texts){
+                                text = text.replace(new RegExp("{"+subId+"}", "ig"), texts[subId]["text-self"]);
+                            }
+                            v += text+"\n\n";
                             t.val(v);
                             BBLog.closeAllPopups();
+                            $("input[name='officialPost']").prop("checked", true);
                         }));
                     }
                 }
